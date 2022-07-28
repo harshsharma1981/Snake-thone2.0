@@ -181,7 +181,7 @@ min-width: 95vw;
    }
    .clickscreen{
     position: absolute;
-    bottom: -2px;
+    bottom: -12px;
     display: flex;
     left: 180px;
   
