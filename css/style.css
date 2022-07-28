@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=PT+Serif&family=Press+Start+2P&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+
+.body{
+   background: url('../rm222batch2-mind-03.jpg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+ display: flex;
+ justify-content: center;
+align-items: center;
+ 
+ 
+ 
+}
+
+#result{
+   
+    position: absolute;
+    right: 4%;
+    top: 13vh;
+    font-size: 5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+   
+}
+
+
+
+
+#display{
+    position: absolute;
+    /* top: 10px; */
+   /* left: 30px;  */
+background:transparent;
+border-radius: 20px;
+min-width: 45vw;
+min-height: 92vh;
+border: 1px solid #483b45;
+display: grid;
+grid-template-rows: repeat(18, 1fr);
+grid-template-columns: repeat(18, 1fr);
+
+}
+
+
+.head{
+background: transparent;
+border: 0.3vh solid rgb(6, 6, 6);
+border-radius: 30%;
+background-size: cover;
+/* transform: rotate(180deg); */
+transform: scale(1.1);
+background:linear-gradient( green , yellow);
+
+}
+.snake{
+    background:url('/frog-food.png');
+    background-size: cover;
+    border: 0.4vh solid rgb(3, 110, 3);
+    border-radius: 40%;
+   
+}
+
+.food{
+    background:url('/frog-food.png');
+    background-size: cover;
+}
+
+
+ #scorenum{
+   color: rgb(0, 0, 0);
+    position: absolute;
+    right: 3%;
+    top: 1.4vh;
+    font-size: 5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+} 
+#highscorebox{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 3%;
+    top: 7vh;
+    font-size: 5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+
+.poisionfood1{
+   transform: scale(2);
+    background:url('/rope.png');
+    background-size: cover;
+}
+.poisionfood2{
+    transform: scale(2);
+    background:url('/rope.png');
+    background-size: cover;
+}
+   
+.poisionfood3{
+    transform: scale(2);
+    background:url('/rope.png');
+    background-size: cover;
+}
+/* poision food you can uncomment this if required */
+.poisionfood4{
+    transform: scale(2);
+    background:url('/rope.png');
+    background-size: cover;
+}
+.poisionfood5{
+    transform: scale(2);
+    background:url('/rope.png');
+    background-size: cover;
+}
+
+/* buttons */
+.clickscreen{
+    display: none;
+}
+
+
+#numpower{
+   
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    font-size: 6vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0)
+}
+#bg{
+    
+    background-size: cover;
+    height: 6vh;
+    width: 4vw;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 768px) {
+   #display{
+     min-height: 76vh;
+   }
+ 
+  }
+@media only screen and (max-width: 768px) {
+   #display{
+     min-height: 71vh;
+   }
+ 
+  }
+@media only screen and (max-width: 425px) {
+   #display{
+     min-height: 60vh;
+min-width: 95vw;
+   }
+   .clickscreen{
+    position: absolute;
+    top: 90%;
+    display: flex;
+    left: 180px;
+  
+   }
+   .moveup{
+    position: absolute;
+    height: 9vh;
+    width: 14vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    bottom: 100%;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    
+   }
+   .moveleft{
+    height: 9vh;
+    width: 14vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+     right: 6px;
+     background: transparent;
+     color: rgb(0, 0, 0);
+   }
+   .moveright{
+    height: 9vh;
+    width: 14vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+   left: 66px;
+  background: transparent;
+  color: rgb(0, 0, 0);
+   }
+   .movedown{
+    position: absolute;
+    height: 9vh;
+    width: 14vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+   }
+
+   .movedown:hover{
+    background-color: yellow;
+    color: black;
+   
+   }
+   .moveup:hover{
+    background-color: yellow;
+    color: black;
+   
+   }
+   .moveleft:hover{
+    background-color: yellow;
+    color: black;
+   
+   }
+   .moveright:hover{
+    background-color: yellow;
+    color: black;
+   
+   }
+ 
+  }
+
+  @media only screen and (max-width: 375px) {
+    #display{
+      min-height: 51.5vh;
+    }
+    
+    .moveright{
+        left: 58px;
+      }
+      .clickscreen{
+        left: 159px;
+      }
+}
+@media only screen and (max-width: 330px){
+    #display{
+        min-height: 53vh;
+        min-width: 86vw ;
+      }
+    
+      .clickscreen{
+     left: 139px;
+      }
+      .moveright{
+        left: 50px;
+      }
+}
