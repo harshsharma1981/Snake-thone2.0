@@ -9,9 +9,9 @@
 
 .body{
    background: url('../rm222batch2-mind-03.jpg');
-  min-height: 111vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
-  background-size: 100vw 111vh;
+  background-size: 100vw 100vh;
  display: flex;
  justify-content: center;
 align-items: center;
@@ -162,116 +162,83 @@ background:linear-gradient( green , yellow);
 
 /* responsiveness */
 
-@media only screen and (max-width: 768px) {
-   #display{
-     min-height: 76vh;
-   }
- 
+
+
+@media only screen and (max-width: 600px) {
+  #display{
+      top: 21vh;
+      left: 5vh;
+      min-width: 82vw;
+      min-height: 46vh;
   }
-@media only screen and (max-width: 768px) {
-   #display{
-     min-height: 71vh;
-   }
- 
-  }
-@media only screen and (max-width: 425px) {
-   #display{
-     min-height: 60vh;
-min-width: 95vw;
-   }
-   .clickscreen{
-    position: absolute;
-    bottom: -12px;
-    display: flex;
-    left: 180px;
+  /* //snake and food */
   
-   }
-   .moveup{
-    position: absolute;
-    height: 9vh;
-    width: 14vw;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    bottom: 100%;
-    background: transparent;
-    color: rgb(0, 0, 0);
-    
-   }
-   .moveleft{
-    height: 9vh;
-    width: 14vw;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    position: absolute;
-     right: 6px;
-     background: transparent;
-     color: rgb(0, 0, 0);
-   }
-   .moveright{
-    height: 9vh;
-    width: 14vw;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    position: absolute;
-   left: 66px;
-  background: transparent;
-  color: rgb(0, 0, 0);
-   }
-   .movedown{
-    position: absolute;
-    height: 9vh;
-    width: 14vw;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    background: transparent;
-    color: rgb(0, 0, 0);
-   }
-
-   .movedown:hover{
-    background-color: yellow;
-    color: black;
-   
-   }
-   .moveup:hover{
-    background-color: yellow;
-    color: black;
-   
-   }
-   .moveleft:hover{
-    background-color: yellow;
-    color: black;
-   
-   }
-   .moveright:hover{
-    background-color: yellow;
-    color: black;
-   
-   }
- 
+  
+  .clickscreen{
+      position: absolute;
+      bottom: 6vh;
+      display:flex;
+      margin: auto;
+  width: 75%;
   }
-
-  @media only screen and (max-width: 375px) {
-    #display{
-      min-height: 51.5vh;
-    }
-    
-    .moveright{
-        left: 58px;
-      }
-      .clickscreen{
-        left: 159px;
-      }
-}
-@media only screen and (max-width: 330px){
-    #display{
-        min-height: 53vh;
-        min-width: 86vw ;
-      }
-    
-      .clickscreen{
-     left: 139px;
-      }
-      .moveright{
-        left: 50px;
-      }
-}
+  .clickscreen button{
+      padding: 2vh;
+  }
+  .moveup{
+      color: black;
+      position: absolute;
+      left: 17vh;
+      bottom: 14vh;
+      font-size: 3vh;
+      border: 0.4vh solid black;
+      border-radius: 3vh;
+     
+      background-color: transparent;
+  }
+  
+  .moveup i{
+      padding: 0.1vh 2vh;
+  }
+  }
+  .movedown{
+      color: black;
+      position: absolute;
+      left: 17vh;
+      bottom: 5vh;
+      font-size: 3vh;
+      border: 0.4vh solid black;
+      border-radius: 3vh;
+     
+      background-color: transparent;
+  }
+  .movedown i{
+      padding: 0.1vh 2vh;
+  }
+  .moveleft{
+      color: black;
+      position: absolute;
+      left: 6vh;
+      bottom: 5vh;
+      font-size: 3vh;
+      border: 0.4vh solid black;
+      border-radius: 3vh;
+     
+      background-color: transparent;
+  }
+  .moveleft i{
+      padding: 0.1vh 2vh;
+  }
+  .moveright{
+      color: black;
+      position: absolute;
+      left: 28vh;
+      bottom: 5vh;
+      font-size: 3vh;
+      border: 0.4vh solid black;
+      border-radius: 3vh;
+     
+      background-color: transparent;
+  }
+  .moveright i{
+      padding: 0.1vh 2vh;
+  }
