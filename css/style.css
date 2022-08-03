@@ -176,7 +176,7 @@ background:linear-gradient( green , yellow);
   
   .clickscreen{
       position: absolute;
-      bottom: 6vh;
+      bottom: 0vh;
       display:flex;
       margin: auto;
   width: 75%;
