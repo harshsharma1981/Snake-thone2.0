@@ -4,7 +4,7 @@ const movesound = new Audio("move.mp3");
 const foodsound = new Audio("eat.mp3");
 const gameoversound = new Audio("gameover.mp3");
 const musicsound = new Audio("music.mp3");
-let speed = 4;
+let speed = 3;
 let lastpainttime = 0;
 let snakeArray = [{ x: 13, y: 17 }];
 let poisionfood1 = { x: 2, y: 4 };
@@ -89,7 +89,7 @@ if(iscollide(snakeArray)){
     inputdirection = { x: 0, y: 0 };
     alert('Game Over. press any key to continue');
   snakeArray = [{ x: 13, y: 17 }];
-    speed = 5
+    speed = 3
   
 
     if (power >= 8) {
@@ -109,6 +109,7 @@ if(iscollide(snakeArray)){
 
     if (power >= 12){
       power -= 12;
+     
     }
    
     // musicsound.play();
